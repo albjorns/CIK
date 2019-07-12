@@ -24,14 +24,11 @@
 
   <header>
 
-        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
-        <div class="mobile">
-          <h1><a href="index.html">Country Inn</a></h1>
-          <h2><a href="index.html">Dog and Cat Kennels</a></h2>
+        <div class="banner">
+          <img src="images/logo.png" alt="Country Inn Kennels logo" class="logo">
+          <a href="index.html"><h1>Country Inn<span class="mobile mobhead"><br>Dog and Cat Kennels</span><span class="desktop"> Dog and Cat Kennels</span></h1></a>
         </div>
-        <div class="desktop">
-          <h1><a href="index.html">Country Inn Dog and Cat Kennels</a></h1>
-        </div>
+        <hr>
 
 	</header>
 
@@ -64,23 +61,19 @@
 
 	<main>
 
-    <div class="banner"></div>
-
-    <hr>
-
     <section class="intro">
 
-        <h3>A little about us...</h3>
+        <h2 class="left">A little about us...</h2>
 
         <p>We are a small, family-owned business located in the beautiful Carson Valley. Minutes away from Tahoe, our kennel is a convenient location to drop off your pet while you enjoy a day at the lake or take an extended ski vacation!</p>
 
     </section>
 
-    <div class="mininav">
-        <a href="#dogfac">Dog Boarding</a>
-        <a href="#catfac">Cat Boarding</a>
-        <a href="#groomfac">Pet Grooming</a>
-    </div>
+    <ul class="mininav">
+        <li><a href="#dogfac">Dog Boarding</a></li>
+        <li><a href="#catfac">Cat Boarding</a></li>
+        <li><a href="#groomfac">Pet Grooming</a></li>
+    </ul>
 
     <section class="content">
 
@@ -90,14 +83,20 @@
 
         <article>
           <div id="dogfac"></div>
-          <h3>Dog Kennels</h3>
+          <h2>Dog Kennels</h2>
 
-            <div class="contimg"><img src="images/boardingdogs.jpg" alt="two dogs inside a kennel"></div>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/boardingdogsmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/boardingdogstab.jpg" media="(max-width: 768px)">
+              <img src="images/boardingdogs.jpg" alt="Two large dogs in the indoor section of their kennel">
+            </picture>
 
             <p>Each canine guest resides in his or her own private indoor/outdoor kennel space. All dogs spend the night inside our secure, heated buildings.</p>
+          </div>
 
             <table class="pricing">
-              <caption><h3>Kennel Dimensions (Approximate)</h3></caption>
+              <caption><h2>Kennel Dimensions (Approximate)</h2></caption>
              <tr>
                 <th>Single Kennels:<br>(4'x16' total)</th>
    				<td>4'x4' inside</td>
@@ -118,13 +117,19 @@
 
         <article>
           <div id="catfac"></div>
-            <h3>Cat Condos</h3>
+            <h2>Cat Condos</h2>
 
-            <div class="contrev"><img src="images/boardingcats.jpg" class="backward" alt="cat condo"></div>
+            <div class="artcon">
+              <picture>
+                <source srcset="images/boardingcatsmob.jpg" media="(max-width: 550px)">
+                <source srcset="images/boardingcatstab.jpg" media="(max-width: 768px)">
+                <img src="images/boardingcats.jpg" alt="Two cats lounge outside their spacious condos">
+              </picture>
 
             <p>Our feline accomodations are located in a separate building from the dogs. Cats are able to relax in their own private, spacious cat condos. Each cat condo has multiple levels for cats to move vertically.</p>
+          </div>
             <table class="pricing">
-              <caption><h3>Cat Condo Dimensions</h3></caption>
+              <caption><h2>Cat Condo Dimensions</h2></caption>
               <tr>
                 <th>Height:</th>
                 <td>4'</td>
@@ -142,11 +147,17 @@
 
         <article>
           <div id="groomfac"></div>
-            <h3>Grooming</h3>
+            <h2>Grooming</h2>
 
-            <div class="contimg"><img src="images/groomings.jpg" alt="freshly groomed Newfoundland"></div>
+            <div class="artcon">
+              <picture>
+                <source srcset="images/groomingmainmob.jpg" media="(max-width: 550px)">
+                <source srcset="images/groomingmaintab.jpg" media="(max-width: 768px)">
+                <img src="images/groomingmain.jpg" alt="A small dog in the bath tub, ready to be washed">
+              </picture>
 
             <p>Currently, we offer basic grooming services and do not have a full salon on the premises. We hope to expand our facilities in the future, however! Keep an eye on this space for updates.</p>
+          </div>
         </article>
       </section>
 
@@ -155,16 +166,13 @@
 
     <footer>
 
-      <div class="mobile">
-
-
-
-      </div>
-
         <div class="footflex">
 
           <table class="contact">
             <caption>Contact Us!</caption>
+            <tr>
+              <th colspan="2"><a href="https://goo.gl/maps/uGP8cDB76SQgwv7n7">3140 US Hwy 395 Minden, NV 89423</a></td>
+            </tr>
             <tr>
               <th>Phone:</th>
               <td><a href="tel:7752672251">(775) 267-2251</a></td>

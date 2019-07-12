@@ -5,67 +5,12 @@
 
   <meta charset="utf-8">
   <meta name="description" content="Dog and cat boarding kennel specializing in individualized care.">
-  <title>Country Inn Kennels Index</title>
+  <title>Country Inn Dog and Cat Kennels</title>
   <link rel="shortcut icon" href="images/paw.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <style>
-    .intro p {
-      margin: -1.3em auto;
-    }
-
-    h4 {
-      width: 80%;
-      text-align: center;
-      margin: 3em auto;
-      font-family: 'Georgia', 'Times', serif;
-      letter-spacing: 0.1em;
-      color: #fdfdfd;
-      font-style: italic;
-      text-shadow: 0.1em 0.1em 0.5em rgba(255,255,255,0.5);
-    }
-
-    .mission {
-      margin-bottom: 20vh;
-    }
-
-    .missionp {
-      width: 80%;
-      text-align: center;
-      margin: 3em auto;
-      font-family: 'Georgia', 'Times', serif;
-      letter-spacing: 0.1em;
-      color: #fdfdfd;
-      font-style: italic;
-      text-shadow: 0.1em 0.1em 0.5em rgba(255,255,255,0.5);
-    }
-
-    .art1 {
-      margin-top: 20vh;
-    }
-
-
-    @media only screen and (min-width: 501px) {
-      h4 {
-        font-family: 'Comfortaa';
-        font-weight: 300;
-        font-size: 1.5em;
-      }
-
-      .missionp {
-        font-size: 1.2em;
-        text-shadow: none;
-      }
-    }
-    @media only screen and (min-width: 768px) {
-      .mission {
-        margin-top: 20vh;
-        margin-bottom: 40vh;
-      }
-    }
-  </style>
 
 </head>
 
@@ -73,14 +18,11 @@
 
 	<header>
 
-        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
-        <div class="mobile">
-          <h1><a href="index.html">Country Inn</a></h1>
-          <h2><a href="index.html">Dog and Cat Kennels</a></h2>
+        <div class="banner">
+          <img src="images/logo.png" alt="Country Inn Kennels logo" class="logo">
+          <a href="index.html"><h1>Country Inn<span class="mobile mobhead"><br>Dog and Cat Kennels</span><span class="desktop"> Dog and Cat Kennels</span></h1></a>
         </div>
-        <div class="desktop">
-          <h1><a href="index.html">Country Inn Dog and Cat Kennels</a></h1>
-        </div>
+        <hr>
 
 	</header>
 
@@ -112,49 +54,59 @@
 
 	<main>
 
-    <div class="banner">&nbsp;</div>
-
-    <hr>
-
     <section class="intro">
 
-        <h3>When you can't be there...</h3>
+        <h2 class="left">When you can't be there...</h2>
 
         <p>If you’re going out of town for the holidays, have family visiting, or just need a break: we're here for you! At Country Inn Dog  and Cat  Kennels we are here to cater to your every boarding and grooming need.</p>
 
-        <h3 class="right">we can!</h3>
+        <h2 class="right">we can!</h2>
 
     </section>
 
     <section class="content">
 
-    <div class="desktop">
+      <article class="mission">
+        <h2>Our Mission is Simple</h2>
 
-      <div class="mission">
-        <h4>Our mission is simple:</h4>
+        <div class="missioncon">
+          <p>At Country Inn Dog and Cat Kennels, we strive to provide the best quality love and care possible for your pets!</p>
 
-        <img src="images/collage.png" alt="many happy pets">
+          <picture>
+            <source srcset="images/collagemob.jpg" media="(max-width: 550px)">
+            <source srcset="images/collagetab.jpg" media="(max-width: 768px)">
+            <img src="images/collage.jpg" alt="Many of our happy dog and cat customers">
+          </picture>
+        </div>
 
-        <p class="missionp">To provide the best quality love and care possible for your pets. </p>
-
-      </div>
-    
-    </div>
+      </article>
 
         <article>
-          <h3>Boarding & Daycare</h3>
+          <h2>Boarding & Daycare</h2>
 
-          <div class="contimg"><img src="images/boardingmain.jpg" alt="dog inside kennel run"></div>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/boardingmainmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/boardingmaintab.jpg" media="(max-width: 768px)">
+              <img src="images/boardingmain.jpg" alt="A dog enjoys the outer run in his clean kennel">
+            </picture>
 
-          <p class="articlecon">With our personal indoor/ outdoor runs and experienced kennel staff, your dog will have all the  freedom he or she needs. Whether your pup prefers to hang out in bed all day or play a good game of fetch, we have it covered!</p>
+            <p>With our personal indoor/outdoor runs and experienced kennel staff, your dog will have all the  freedom he or she needs. Whether your pup prefers to hang out in bed all day or play a good game of fetch, we have it covered!</p>
+          </div>
         </article>
 
         <article>
-          <h3>Grooming</h3>
+          <h2>Grooming</h2>
 
-          <div class="contrev"><img src="images/groomingmain.jpg" alt="dog having a bath"></div>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/groomingmainmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/groomingmaintab.jpg" media="(max-width: 768px)">
+              <img src="images/groomingmain.jpg" alt="A small dog in the bath tub, ready to be washed">
+            </picture>
 
-          <p>Make sure your pet is fresh and clean on the day of pick up! We also offer basic grooming services including bath, brush, and nail trims. Call any time to make an appointment for a doggy spa day.</p>
+            <p>Make sure your pet is fresh and clean on the day of pick up! We also offer basic grooming services including bath, brush, and nail trims. Call any time to make an appointment for a doggy spa day.</p>
+          </div>
         </article>
 
     </section>
@@ -174,6 +126,9 @@
 
           <table class="contact">
             <caption>Contact Us!</caption>
+            <tr>
+              <th colspan="2"><a href="https://goo.gl/maps/uGP8cDB76SQgwv7n7">3140 US Hwy 395 Minden, NV 89423</a></td>
+            </tr>
             <tr>
               <th>Phone:</th>
               <td><a href="tel:7752672251">(775) 267-2251</a></td>
