@@ -582,7 +582,6 @@ footer {
 @media only screen and (min-width: 550px) {
 
   header {
-    margin-top: 3em;
     display: flex;
     flex-direction: row;
     justify-content: center;
