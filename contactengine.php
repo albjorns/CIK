@@ -1,11 +1,11 @@
 <?php
 
-$EmailFrom = "CountryInnKennels@Ccountryinnkennels.com";
+$EmailFrom = Trim(FILTER_SANITIZE_EMAIL($_POST['Email']));
 $EmailTo = "staff@countryinnkennels.com";
 $Subject = "Contact Form Submision";
-$Name = Trim(htmlentities($_POST['Name'])); 
-$Email = Trim(htmlentities($_POST['Email'])); 
-$Message = Trim(htmlentities($_POST['Message'])); 
+$Name = Trim(FILTER_SANITIZE_SPECIAL_CHARS($_POST['Name']));
+$Email = Trim(FILTER_SANITIZE_SPECIAL_CHARS($_POST['Email']));
+$Message = Trim(FILTER_SANITIZE_SPECIAL_CHARS($_POST['Message']));
 
 // validation
 $validationOK=true;
@@ -26,10 +26,10 @@ $Body .= "Message: ";
 $Body .= $Message;
 $Body .= "\n";
 
-// send email 
+// send email
 $success = mail($EmailTo, $Subject, $Body, "From: <$EmailFrom>");
 
-// redirect to success page 
+// redirect to success page
 if ($success){
   print "<meta http-equiv=\"refresh\" content=\"0;URL=contactthanks.php\">";
 }
