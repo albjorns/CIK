@@ -4,28 +4,38 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="description" content="Dog and cat boarding kennel specializing in individualized care.">
-  <title>Services</title>
+    <meta name="description" content="Clean, fun, and secure pet boarding and daycare located conveniently off Highway 395, near Lake Tahoe and Reno. We care for your pets as if they were our own!">
+  <title>Services - Country Inn Kennels</title>
   <link rel="shortcut icon" href="images/paw.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .mission {
+      display: none;
+    }
+
+    .missioncon p, .artcon p {
+      padding: 0;
+    }
+
+    .mininav li {
+      margin: 0.5em 0.5em;
+    }
+  </style>
 
 </head>
 
 <body>
 
-	<header>
+  <header>
 
-        <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
-        <div class="mobile">
-          <h1><a href="index.html">Country Inn</a></h1>
-          <h2><a href="index.html">Dog and Cat Kennels</a></h2>
+        <div class="banner">
+          <img src="images/logo.png" alt="Country Inn Kennels logo" class="logo">
+          <a href="index.html"><h1>Country Inn<span class="mobile mobhead"><br>Dog and Cat Kennels</span><span class="desktop"> Dog and Cat Kennels</span></h1></a>
         </div>
-        <div class="desktop">
-          <h1><a href="index.html">Country Inn Dog and Cat Kennels</a></h1>
-        </div>
+        <hr>
 
 	</header>
 
@@ -39,7 +49,7 @@
       <a href="/about">About Us</a>
       <a href="/services" class="current">Services</a>
       <a href="/faqs">FAQs</a>
-      <a href="contact.html">Contact</a>
+      <a href="/contact">Contact</a>
     </div>
 
   </nav>
@@ -51,54 +61,56 @@
     <a href="/about">About Us</a>
     <a href="/services" class="current">Services</a>
     <a href="/faqs">FAQs</a>
-    <a href="contact.html">Contact</a>
+    <a href="/contact">Contact</a>
 
   </nav>
 
 
 	<main>
 
-    <div class="banner"></div>
-
-    <hr>
-
     <section class="intro">
 
-        <h3>Services</h3>
+        <h2>Services</h2>
 
         <p>We are a full-service boarding and daycare facility. We also offer basic grooming for pets boarding with us and by appointment.</p>
 
     </section>
 
-    <div class="mininav">
-        <a href="#dogpric">Dog Boarding</a>
-        <a href="#catpric">Cat Boarding</a>
-        <a href="#otherpric">Other Animals</a>
-        <a href="#groompric">Pet Grooming</a>
-    </div>
+    <ul class="mininav">
+        <li><a href="#dogpric">Dog Boarding</a></li>
+        <li><a href="#catpric">Cat Boarding</a></li>
+        <li><a href="#otherpric">Other Animals</a></li>
+        <li><a href="#groompric">Pet Grooming</a></li>
+    </ul>
 
     <section class="content">
 
 
         <article class="art1">
           <div id="dogpric"></div>
-          <h3>Dog Boarding and Daycare</h3>
-          <div class="contimg"><img src="images/dogsvcs.jpg" alt="two happy dogs standing outside"></div>
-          <div class="para">
-            <p>Our boarding rates are charged per night. Checkout time for overnight stays is 1PM. Checkout for daycare: 6PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer. You can learn more about our kennel setup <a href="about.html">here</a>.</p>
-            <p>Required Vaccines:</p>
-            <ul>
-              <li>Bordatella</li>
-              <li>DAPP / DHLP</li>
-              <li>Rabies</li>
-            </ul>
-            <p>Recommended Vaccine:</p>
-            <ul>
-              <li>Canine Influenza (H3N2)</li>
-            </ul>
+          <h2>Dog Boarding and Daycare</h2>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/svcsdogsmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/svcsdogstab.jpg" media="(max-width: 768px)">
+              <img src="images/svcsdogs.jpg" alt="Two large dogs stay cool in the indoor section of their kennel">
+            </picture>
+              <div class="para">
+                <p>Our boarding rates are charged per night. Checkout time for overnight stays is 1PM. Checkout for daycare: 6PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer. You can learn more about our kennel setup <a href="about.html">here</a>.</p>
+                <p>Required Vaccines:</p>
+                <ul>
+                  <li>Bordatella</li>
+                  <li>DAPP / DHLP</li>
+                  <li>Rabies</li>
+                </ul>
+                <p>Recommended Vaccine:</p>
+                <ul>
+                  <li>Canine Influenza (H3N2)</li>
+                </ul>
+            </div>
           </div>
           <table class="pricing">
-            <caption><h3>Prices</h3></caption>
+            <caption><h2>Prices</h2></caption>
             <tr>
               <th>1st Dog</th>
               <td>$18*</td>
@@ -118,7 +130,7 @@
           </table>
           <aside>*<i>Senior, Military, Veteran, First Responder Discount: $16/night first dog</i></aside>
           <table class="pricing">
-            <caption><h3>Extras</h3></caption>
+            <caption><h2>Extras</h2></caption>
             <tr>
               <th>Walk<br></th>
               <td>$5 per 15 mins</td>
@@ -144,18 +156,24 @@
 
         <article>
           <div id="catpric"></div>
-          <h3>Cat Boarding and Daycare</h3>
-          <div class="contrev"><img src="images/catsvcs.jpg" class="backward" alt="a playful orange tabby cat"></div>
-          <div class="para">
-            <p>Our boarding rates are charged per night. Checkout time for overnight stays is 1PM. Checkout for daycare: 6PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer. You can learn more about our kennel setup <a href="about.html">here</a>.</p>
-            <p>Required Vaccines:</p>
-            <ul>
-              <li>FVRCP</li>
-              <li>Rabies</li>
-            </ul>
+          <h2>Cat Boarding and Daycare</h2>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/svcscatsmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/svcscatstab.jpg" media="(max-width: 768px)">
+              <img src="images/svcscats.jpg" alt="Two large dogs stay cool in the indoor section of their kennel">
+            </picture>
+            <div class="para">
+              <p>Our boarding rates are charged per night. Checkout time for overnight stays is 1PM. Checkout for daycare: 6PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer. You can learn more about our kennel setup <a href="about.html">here</a>.</p>
+              <p>Required Vaccines:</p>
+              <ul>
+                <li>FVRCP</li>
+                <li>Rabies</li>
+              </ul>
+            </div>
           </div>
         <table class="pricing">
-          <caption><h3>Prices</h3></caption>
+          <caption><h2>Prices</h2></caption>
           <tr>
             <th>1st+ Cat<br>(Separate Condos)</th>
             <td>$12</td>
@@ -167,7 +185,7 @@
         </table>
         <aside></aside>
         <table class="pricing">
-          <caption><h3>Extras</h3></caption>
+          <caption><h2>Extras</h2></caption>
           <tr>
             <th>Kennel Food</th>
             <td>$1 per meal, each meal up to 1 cup kibble or 1 can wet</td>
@@ -185,14 +203,20 @@
 
         <article>
           <div id="otherpric"></div>
-          <h3>Other Animals</h3>
-          <div class="contimg"><img src="images/bunsvcs.jpg" alt="a large rabbit"></div>
-          <div class="para">
-            <p>Our boarding rates are charged per night. Checkout time is 1PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer.</p>
-            <p>Although we primarily specialize in dogs and cats, we have limited space for small animals such as rabbits and guinea pigs. If you are interested in boarding a small animal, we recommend contacting us to discuss your pet's specific needs.</p>
+          <h2>Other Animals</h2>
+          <div class="artcon">
+            <picture>
+              <source srcset="images/svcsothmob.jpg" media="(max-width: 550px)">
+              <source srcset="images/svcsothtab.jpg" media="(max-width: 768px)">
+              <img src="images/svcsoth.jpg" alt="Two large dogs stay cool in the indoor section of their kennel">
+            </picture>
+            <div class="para">
+              <p>Our boarding rates are charged per night. Checkout time is 1PM. Please <a href="contact.html">contact us</a> for information about stays of a month or longer.</p>
+              <p>Although we primarily specialize in dogs and cats, we have limited space for small animals such as rabbits and guinea pigs. If you are interested in boarding a small animal, we recommend contacting us to discuss your pet's specific needs.</p>
+            </div>
           </div>
         <table class="pricing">
-          <caption><h3>Prices</h3></caption>
+          <caption><h2>Prices</h2></caption>
           <tr>
             <th>1st+ Animal<br></th>
             <td>$12</td>
@@ -201,13 +225,17 @@
 
         <article>
           <div id="groompric"></div>
-          <h3>Grooming</h3>
-          <div class="contrev"><img src="images/groomsvcs.jpg" class="backward" alt="happy dog after a bath"></div>
+          <h2>Grooming</h2>
+          <picture>
+            <source srcset="images/svcsgroommob.jpg" media="(max-width: 550px)">
+            <source srcset="images/svcsgroomtab.jpg" media="(max-width: 768px)">
+            <img src="images/svcsgroom.jpg" alt="Two large dogs stay cool in the indoor section of their kennel">
+          </picture>
           <p>Schedule to have your pet groomed before pick up! Late charges do not apply to checkouts after 1PM if you schedule to have your dog bathed in the morning. <a href="contact.html">Contact us</a> for more detailed information on pricing, or for a personalized quote.
             <br><br>
             Grooming Hours: 9:00AM - 5:00PM</p>
         <table class="pricing">
-          <caption><h3>Prices</h3></caption>
+          <caption><h2>Prices</h2></caption>
           <tr>
             <th>Bath & Brush<br>(dog)</th>
             <td>$15-$45</td>
@@ -247,6 +275,9 @@
 
           <table class="contact">
             <caption>Contact Us!</caption>
+            <tr>
+              <th colspan="2"><a href="https://goo.gl/maps/uGP8cDB76SQgwv7n7" target="_blank">3140 US Hwy 395 Minden, NV 89423</a></th>
+            </tr>
             <tr>
               <th>Phone:</th>
               <td><a href="tel:7752672251">(775) 267-2251</a></td>
