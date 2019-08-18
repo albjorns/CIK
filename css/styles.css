@@ -155,6 +155,54 @@ main {
   line-height: 1.5em;
 }
 
+#notice {
+  z-index: 5;
+  position: fixed;
+  top: 30%;
+  max-width: 90%;
+  max-height: 80%;
+  border: 1px solid #173454;
+  background: #fdfdfd url('../images/greyzz.jpg') repeat;
+  opacity: 1.0;
+  padding: 2.5em 1.5em 1em 1.5em;
+  margin: 0;
+  box-shadow: -0.5em 1em 1em rgba(0,0,0,0.4);
+}
+
+#notice h4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  border-bottom: 1px solid #173454;
+  background-color: #65a4c5;
+  font-family: 'Comfortaa', sans-serif;
+  font-variant: small-caps;
+  font-weight: 500;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  line-height: 2em;
+  color: #173454;
+}
+
+#notice p {
+  text-align: justify;
+  line-height: 1.3em;
+  font-size: 0.9em;
+  color: #173454;
+}
+
+#notice a {
+  color: #65a4c5;
+}
+
+button {
+  border: 1px solid #173454;
+  background-color: #65a4c5;
+  color: #173454;
+}
+
 /* first box */
 .intro {
   margin: 10vh auto;
@@ -248,7 +296,8 @@ article h2 {
   opacity: 0.8;
 }
 
-article img {
+article picture {
+  line-height: 0;
   border-bottom: 0.2em solid #65a4c5;
 }
 
@@ -275,7 +324,7 @@ article img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: space-between;
+  align-items: center;
   margin: 3em auto;
   text-align: center;
   font-family: 'Comfortaa';
@@ -359,15 +408,26 @@ aside {
   opacity: 0.7;
 }
 
+.faqlinks {
+  width: 100%;
+  margin: 0 auto 4em auto;
+  line-height: 2em;
+  list-style-type: none;
+}
+
 .faqlinks li {
-  margin: auto;
+  margin: 1.5em auto;
   width: 90%;
-  box-sizing: inherit;
+  text-align: center;
 }
 
 .faqlinks a {
   box-sizing: border-box;
   white-space: normal;
+}
+
+.indent {
+  padding-left: 5%;
 }
 
 h5 {
@@ -382,13 +442,8 @@ h5 {
   text-shadow: 0.1em 0.1em 0.5em rgba(255,255,255,0.5);
 }
 
-#dogfac, #catfac, #groomfac {
-  box-sizing: inherit;
-}
-
 /* contact form */
 #contact-area {
-  box-sizing: border-box;
 	width: 100%;
 	margin: 0 auto;
   padding: 2em;
@@ -502,7 +557,7 @@ footer {
   .links {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    transition: 0.2s ease-out;
   }
 
   .links-icon {
@@ -582,51 +637,45 @@ footer {
 @media only screen and (min-width: 550px) {
 
   header {
+    top: 2.5em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
   }
 
-  h1 {
-    font-size: 4vw;
-    padding-left: 0.5em;
+  .banner {
+    padding-top: 0.6em;
   }
 
-  h2 {
-    margin-top: -1.5em;
-    font-size: 2.5em;
-    letter-spacing: 3vw;
+  .logo {
+    margin: 0;
+    width: 10%;
+  }
+
+  h1 {
+    display: inline;
+    font-size: 4vw;
+    letter-spacing: 0.15em;
   }
 
   nav {
     font-size: 0.8em;
   }
 
-  .banner {
-    background: url('../images/bannertab.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 100vh;
+  hr {
+    top: 50vh;
+    width: 100%;
   }
 
   .intro {
-    width: 70%;
-    margin: auto;
+    width: 80%;
+    margin: 10vh auto;
     font-size: 1.2em;
     line-height: 1.5em;
   }
 
-  .mininav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .content {
-    border-top: none;
-    width: 100%;
-    margin: 3em auto;
     background: transparent;
     border-bottom: none;
   }
@@ -637,56 +686,86 @@ footer {
     min-height: 60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-bottom: 0.3em solid #65a4c5;
   }
 
-  .missionp {
-    width: 80%;
+  .missioncon {
+    justify-content: space-between;
+    padding-top: 2em;
+  }
+
+  .missioncon p, .artcon p {
+    text-align: justify;
+    padding: 5%;
+    line-height: 1.5em;
+    color: #fdfdfd;
+    opacity: 0.8;
+  }
+
+  .missioncon picture {
+    margin: 0;
+    align-self: flex-end;
   }
 
   article {
-    box-sizing: inherit;
     min-height: 60vh;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    border-top: 0.5em solid #65a4c5;
+    padding-top: 1em;
     background-color: #173454;
     border-bottom: 0.5em solid #65a4c5;
   }
 
-  article h3 {
-    margin-top: 0.5em;
-    box-sizing: inherit;
-    flex: 0 0 100%;
-    align-self: flex-start;
-    font-size: 1.5em;
-    line-height: 1.7em;
-    margin-bottom: 0;
+  article:not(:first-child) {
+    margin-top: 30vh;
   }
 
-  article p {
-    font-size: 1.2em;
-    line-height: 1.5em;
+  .artcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .contimg {
-    line-height: 0.5em;
+  .even {
+    flex-direction: row-reverse;
   }
 
-  article * {
-    flex-basis: 50%;
-    box-sizing: border-box;
+  article picture, article p {
+    flex: 0 0 50%;
+    border-bottom: none;
+  }
+
+  .artcon img {
+    border-right: 0.2em solid #65a4c5;
+  }
+
+  .even picture {
+    text-align: right;
+  }
+
+  .even img {
+    border-left: 0.2em solid #65a4c5;
+    border-right: none;
+  }
+
+  .para {
+    padding: 0 5%;
   }
 
   .pricing {
-    margin: 0 auto;
+    margin: -1.1em auto;
+    padding-bottom: 1.1em;
     flex: 0 0 100%;
     order: 3;
     align-self: flex-end;
+    border-color: transparent;
   }
 
   .pricing h3 {
@@ -694,10 +773,12 @@ footer {
     line-height: 1em;
   }
 
-  .contrev {
-    order: 2 ;
-    flex-basis: 50%;
-    line-height: 0.5em;
+  .mininav {
+    font-size: 1em;
+  }
+
+  .mininav li {
+    flex: 0 0 45%;
   }
 
     label {
@@ -730,18 +811,30 @@ footer {
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 670px) {
 
   img {
     max-height: 80vh;
   }
 
+  header {
+    justify-content: space-between;
+  }
+
   .banner {
+    padding-left: 1%;
     background: url('../images/banner.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center center;
-    height: 100vh;
+  }
+
+  .logo {
+    width: 5%;
+  }
+
+  .banner h1 {
+    padding: 1% 0 0 1%;
+    letter-spacing: 0.2em;
   }
 
   main {
@@ -749,9 +842,19 @@ footer {
     line-height: 2em;
   }
 
+  #notice {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  button {
+    font-size: 0.9em;
+    line-height: 1.5em;
+  }
+
   .intro {
     width: 60%;
-    margin: auto;
+    margin: 20vh auto;
   }
 
   .content {
@@ -763,16 +866,24 @@ footer {
     font-size: 2em;
   }
 
-  article {
-    margin-top: 40vh;
+  article:not(:first-child) {
+    margin-top: 50vh;
   }
 
-  .contimg {
-    text-align: left;
+  article picture {
+    flex: 0 0 30%;
   }
 
-  .contrev {
-    text-align: right;
+  article p {
+    flex: 0 0 70%;
+  }
+
+  .mininav li {
+    flex: 0 0 20%;
+  }
+
+  .faqlinks {
+    margin-top: 10vh;
   }
 
   #contact-area {
@@ -789,6 +900,7 @@ footer {
 
   footer {
     margin-top: 40vh;
+    font-size: 1em;
   }
 
   .tiny {
